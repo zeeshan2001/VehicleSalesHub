@@ -1,0 +1,403 @@
+/* main container */
+.KT_mainarea {
+	width:100%;
+	text-align: center;
+	opacity:0;
+}
+/* Sub container */
+.KT_tng {
+	display: block;
+	padding: 0 10px 0 10px;
+	text-align: left;
+	max-width: 900px;
+	margin: 1.4rem auto;
+}
+/*
+ * this list of classes refers to ALL the generated buttons inside the list;
+ * if you modify it, all the generated buttons will take on the new look */
+.button_big,
+.button_small,
+.button_smallest,
+.KT_tngtable tbody tr.KT_buttons input,
+#KT_tngdeverror input,
+#KT_tngtrace input,
+.KT_tngtable th.KT_sorter input,
+.KT_row_filter_submit_button,
+.KT_tnglist .KT_tngtable tbody tr input,
+.KT_tnglist .KT_tngtable #KT_selAll {
+	border: 0px;
+	border-radius:5px;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #3c63a2;
+	color: #ffffff;
+	padding: 6px 8px;
+	margin-right: 5px;
+	border-top: 2px solid #8BB3F4; border-left: 2px solid #8BB3F4;
+	border-bottom: 2px solid #28426D; border-right: 2px solid #28426D;
+}
+.button_big:focus,
+.button_small:focus,
+.button_smallest:focus,
+.KT_tngtable tbody tr.KT_buttons input:focus,
+#KT_tngdeverror input:focus,
+#KT_tngtrace input:focus,
+.KT_tngtable th.KT_sorter input:focus,
+.KT_row_filter_submit_button:focus,
+.KT_tnglist .KT_tngtable tbody tr input:focus,
+.KT_tnglist .KT_tngtable #KT_selAll:focus,
+.KT_bottombuttons input:focus,
+.KT_topbuttons input:focus,
+.button_big:hover,
+.button_small:hover,
+.button_smallest:hover,
+.KT_tngtable tbody tr.KT_buttons input:hover,
+#KT_tngdeverror input:hover,
+#KT_tngtrace input:hover,
+.KT_tngtable th.KT_sorter input:hover,
+.KT_row_filter_submit_button:hover,
+.KT_tnglist .KT_tngtable tbody tr input:hover,
+.KT_tnglist .KT_tngtable #KT_selAll:hover,
+.KT_bottombuttons input:hover,
+.KT_topbuttons input:hover {
+}
+/*Button press effect */
+.button_big:active, input.button_small:active, .button_smallest:active, .KT_tngtable tbody tr.KT_buttons input:active, .KT_tnglist .KT_tngtable #KT_selAll:active, #KT_tngdeverror input:active, #KT_tngtrace input:active, .KT_tngtable th.KT_sorter input:active, .KT_row_filter_submit_button:active, .KT_tnglist .KT_tngtable tbody tr input:active, .KT_tng .KT_tngform .KT_topbuttons input:active, .KT_topbuttons a:active, .KT_tng .KT_tngform .KT_bottombuttons input:active, div.KT_topbuttons > div > input[type=button]:active, div.KT_topbuttons > input[type=button]:active, div.KT_bottombuttons > div > input[type=button]:active, div.KT_bottombuttons > input[type=button]:active {
+		transform: translate(1px, 1px);
+		outline: 0;
+}
+
+/* Form fields in filter */
+.KT_tngtable thead input[type="text"], .KT_tngtable thead select {
+	width: calc(100% - 15px);
+}
+/* submit and reset buttons in filter*/
+.KT_row_filter input[type=submit]:hover, .KT_row_filter input[type=submit]:focus {
+	background: #ddd;
+	outline: 0;
+	cursor: pointer;
+}
+.KT_row_filter input[type=submit]:active, .KT_row_filter button:active {
+	outline:0;
+	transform: translate(1px, 1px);
+}
+.KT_tng, .KT_tng textarea, .KT_tng, .KT_tng select, .KT_tng, .KT_tng input, .KT_tng button {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.KT_tng a, .KT_tng a:visited, .KT_tng a:active, .KT_tng a:hover {
+				font-family: Verdana, Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				font-weight: bold;
+				text-decoration: none;
+				color: #555555;
+			/* padding: 0px 5px 0px 12px; */
+			margin-right: 0px;
+		}
+		.KT_tng a:hover {
+			/* background-color: #3c63a2; */
+			color: #3c63a2;
+		}
+
+/* form look and feel */
+
+/* Form / List look and feel
+ * KT_tngform
+ * 		the main container for a NeXTensio form
+ * KT_tnglist
+ * 		the main container for a NeXTensio list */
+
+.KT_tngform, .KT_tnglist {
+	float: left;
+	background-color: #ffffff;
+	border: solid 1px #4F72B4;
+	width: 100%;
+}
+
+ /* the main form tag inside a next list / form */
+	.KT_tng .KT_tngform form, .KT_tng .KT_tnglist form {
+		padding: 0;
+		margin: 0;
+	}
+	/* HACK : added to prevent clipping of bottom border in ie */
+	* html .KT_tng form { /* ie */
+		padding-bottom: 1px;
+	}
+
+	/* List / Form Headers */
+	.KT_tng h3 {
+		margin-left: 4px;
+	}
+	/*
+	 * KT_tngtable
+	 * 		tabular content generated for NeXT List / Form */
+	.KT_tngtable, .KT_tng .KT_options {
+		margin: 0;
+		border-collapse: collapse;
+	}
+		.KT_tngtable {
+			/*background-image: url(images/bg.gif) ! important;
+			background-repeat: repeat-y;*/
+			width:100%;
+			border-collapse: separate;
+			border-spacing: 5px;
+		}
+	 .KT_tngtable tr {
+		 background: #EDEFF3;
+		 /*background-image: linear-gradient(to right,#CACFDD,#EDEFF3,#EDEFF3,#F7F8F9);*/
+}
+		.KT_tngtable td {
+			/*border: solid 1px #afafaf;*/
+			padding:2px;
+		}
+
+		/* style for each content cell */
+		.KT_tngtable tbody td {
+			vertical-align:middle;
+			padding-left: 2px 5px;
+		}
+
+	/*
+	 * KT_options
+	 * 		div generated inside the Nextensio List with  "Show all records ..."
+	 * */
+	.KT_tng .KT_options {
+	}
+		.KT_tng .KT_options a {
+		}
+
+/* KT_topbuttons, KT_bottombuttons
+ * 		the up / down generated area with the edit, delete, add new links / buttons */
+.KT_topbuttons, .KT_bottombuttons {
+	text-align: right;
+	background-color: #edeff3;
+	padding: 6px;
+	min-height: 20px;
+}
+	/*
+	 * KT_operations
+	 * 		coontains only the Edit / Delete buttons
+	 * */
+	.KT_topbuttons div.KT_operations, .KT_bottombuttons div.KT_operations {
+		display: inline;
+	}
+	.KT_topbuttons div.KT_left, .KT_bottombuttons div.KT_left {
+		float: left;
+	}
+
+.KT_topbuttons {
+	border-bottom: solid 1px #000000;
+}
+.KT_bottombuttons {
+	border-top: solid 1px #000000;
+}
+	.KT_bottombuttons div {
+	}
+
+				.KT_bottombuttons a, .KT_topbuttons a,
+				.KT_bottombuttons a:visited, .KT_topbuttons a:visited,
+				.KT_bottombuttons a:hover, .KT_topbuttons a:hover {
+				}
+				.KT_bottombuttons a:hover, .KT_topbuttons a:hover {
+				}
+		/*
+		.KT_bottombuttons a, .KT_topbuttons a,
+				.KT_bottombuttons a:visited, .KT_topbuttons a:visited,
+				.KT_bottombuttons a:hover, .KT_topbuttons a:hover,
+		*/
+
+
+		/* remove padding / margin on all links */
+		.KT_tnglist .KT_tngtable tbody tr a,
+		.KT_tnglist .KT_tngtable tbody tr a:hover, .KT_tnglist .KT_tngtable tbody tr a:active, .KT_tnglist .KT_tngtable tbody tr a:visited,
+		.KT_tng .KT_bottombuttons a,
+		.KT_tng .KT_bottombuttons a:hover, .KT_tng .KT_bottombuttons a:active, .KT_tng .KT_bottombuttons a:visited,
+		.KT_tng .KT_topbuttons a,
+		.KT_tng .KT_topbuttons a:hover, .KT_tng .KT_topbuttons a:active, .KT_tng .KT_topbuttons a:visited {
+			/* padding: 0; */
+			margin: 0;
+			background-image: none;
+		}.KT_tnglist td.KT_order_selected
+
+/* list specific */
+.KT_tnglist .KT_options {
+	padding-right: 4px;
+	text-align: right;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.KT_tnglist .KT_options {
+	margin-bottom: 0px;
+}
+	.KT_tnglist .KT_options a, .KT_tnglist .KT_options a:hover, .KT_tnglist .KT_options a:visited, .KT_tnglist .KT_options a:active {
+		background-image: none;
+	}
+
+/*
+ * th.KT_order
+ * 		contains the ordering sorter link (Order) and the "save" link / button
+ * td.KT_order
+ * 		contains the move up / down buttons on each row
+ * 	*/
+.KT_tnglist td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.KT_tnglist th.KT_order,
+.KT_tnglist td.KT_order{
+	width: 80px ! important;
+	text-align: center;
+}
+/*
+ * change the appearance of the move up/down list buttons here
+ *  if you specify a background-image, the buttons will lose their value attribute
+ */
+	.KT_tnglist td.KT_order .KT_button_move_down{
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-image:url(images/down.gif);
+	}
+
+	.KT_tnglist td.KT_order .KT_button_move_up{
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-image:url(images/up_light.gif);
+		margin-right: 0px;
+	}
+/* The 'Save' header for order sorting in lists */
+	.KT_tnglist th.KT_order_selected,
+	.KT_tnglist td.KT_order_selected {
+		padding: 5px 0 5px 15px;
+		background: #00B200;
+	}
+.KT_tnglist th.KT_order_selected a,
+.KT_tnglist td.KT_order_selected a {
+	color: #fff !important;
+	margin:3px;
+}
+.KT_tnglist th.KT_order_selected a:after,
+.KT_tnglist td.KT_order_selected a:after {
+	display:none !important;
+}
+.KT_tnglist th.KT_sorter a {
+	padding-right: 15px ! important;
+	color:#000;
+}
+	/* th.KT_asc
+	 * 		modify the links inside the table cell which has the active ordering
+	 * */
+	.KT_tnglist th.KT_asc a {
+		/*background: url(images/up_light.gif) no-repeat 100% 50%    ! important; */
+
+}
+	.KT_tnglist th.KT_asc a:after {
+	font-family: "Font Awesome 5 Pro";
+	content: '\f0de';
+	color:#000;
+	display:inline-block;
+	font-size:18px;
+	padding-left:8px;
+	line-height:12px;
+	transform: translateY(6px);
+}
+	.KT_tnglist th.KT_desc a, .KT_tnglist th.KT_desc a:active, .KT_tnglist th.KT_desc a:visited {
+		/*background: url(images/down_light.gif) no-repeat 100% 50%    ! important;*/
+
+	}
+	.KT_tnglist th.KT_desc a:after {
+	font-family: "Font Awesome 5 Pro";
+	content: '\f0dd';
+	color:#000;
+	display:inline-block;
+	font-size:18px;
+	padding-left:8px;
+	line-height:12px;
+	transform: translateY(-2px);
+
+}
+	/*
+	 * KT_move_op_link
+	 * 		the link for saving the moved rows
+	 * */
+	.KT_tnglist th.KT_asc a.KT_move_op_link,
+	.KT_tnglist th.KT_desc a.KT_move_op_link {
+		padding: 0; margin: 0;
+		background-image: none;
+	}
+
+	/* row colors */
+	/* row alternative color */
+	.KT_tnglist table.KT_tngtable tr.KT_even, tr.KT_even {
+		background: #fbfbfb;
+	}
+	/* selected row (checkbox is clicked) */
+	.KT_tnglist table.KT_tngtable tr.KT_highlight {
+		background: #D5DAE3 !important;
+	}
+	/* moved highlight color */
+	.KT_tnglist tr.KT_movehighlight {
+		/*background-color: #ABB1B6;*/
+	}
+	.KT_tnglist table.KT_tngtable tbody tr:hover {
+		background: #D5DAE3! important;
+	}
+	.KT_tnglist table.KT_tngtable tbody tr.KT_over a {
+		/*background-color: #3c63a2 ! important;*/
+		color: #3c63a2 ! important;
+	}
+/* KT_bottomnav, KT_topnav
+ * 		list navigation container */
+.KT_tng .KT_tnglist .KT_bottomnav,
+.KT_tng .KT_tnglist .KT_topnav {
+	text-align: center;
+	font-size: 12px;
+}
+	/* HACK : mozilla to ensure it doesn't float all the way to the right */
+	/*
+	.KT_tng .KT_tnglist .KT_bottomnav>div, .KT_tng .KT_tnglist .KT_topnav>div {
+		width: 100px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	*/
+
+.KT_tng .KT_tnglist .KT_bottomnav {
+	margin: 10px 0;
+}
+.KT_tng .KT_tnglist .KT_topnav {
+	margin: 10px 0;
+}
+	.KT_tng .KT_tnglist .KT_topnav td,
+	.KT_tng .KT_tnglist .KT_bottomnav td {
+		font-weight: bold ! important;
+		color: #555555;
+	}
+/* for styling the actual links inside the navigation area, please see the nav.css file */
+
+/* form specific */
+.merge_down {
+
+}
+
+.KT_tng h1, .main-head  {
+	font-size: 18px;
+	padding: 4px 0px 4px 4px;
+	margin: 0px 0px 10px 0px;
+	text-align: center;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+	/* Form "Record x" tag when editing multiple records */
+	.KT_tng .KT_tngform h2 {
+		font-size: 16px;
+		padding: 4px 0px 4px 4px;
+		margin: 0px 0px 0px 0px;
+	}
+
+	/* buttons redeclared specifically for form */
+	.KT_tng .KT_tngform .KT_topbuttons input, .KT_tng .KT_tngform .KT_bottombuttons input{
+		font-size: 12px;
+	}
+
+.KT_tng .KT_tnglist  .KT_masterlink {
+
+}

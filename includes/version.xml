@@ -1,0 +1,13 @@
+<products>
+		<product name="Transaction Engine" version="3.7.1" />
+		<product name="MX Form Validation" version="Pro-3.7.1" />
+		<product name="MX Includes" version="Pro-3.7.1" />
+		<product name="MX Send E-mail" version="Pro-3.7.1" />
+		<product name="MX User Login" version="Pro-3.7.1" />
+		<product name="MX Widgets" version="Pro-3.7.1" />
+		<product name="NeXTensio3" version="Pro-3.7.1" />
+		<product name="MX Query Builder" version="Pro-3.7.1" />
+		<product name="MX File Upload" version="Pro-3.7.1" />
+		<product name="MX CSV Import-Export" version="1.8.6" />
+		<product name="MX Looper3" version="Pro-3.7.1" />
+</products>

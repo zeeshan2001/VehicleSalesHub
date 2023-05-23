@@ -1,0 +1,38 @@
+
+.c-input {
+	background-color: transparent !important; 
+	border: 1px solid black !important; 
+	color: black !important;
+}
+.c-input:disabled {
+    cursor: default !important;
+    background-color: -internal-light-dark(rgba(239, 239, 239, 0.3), rgba(59, 59, 59, 0.3)) !important;
+    color: rgb(170, 170, 170) !important;
+    border-color: rgba(118, 118, 118, 0.3) !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+}
+.w-50{
+    width: 50px !important;
+}
+.w-70 {
+    width: 70px !important;
+}
+.mw-100{
+    min-width: 100px;
+}
+.save_btn {
+    padding: 15px; 
+    border: 1px solid black; 
+    border-radius: 5px; 
+    width: auto; 
+    text-align: center; 
+    background: green;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.bulk-element{
+    display: none;
+}

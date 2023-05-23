@@ -1,0 +1,53 @@
+.channelTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	color: #0033CC;
+	font-weight: normal;
+}
+.channelDescription {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+}
+.tableHead {
+	font-style: normal;
+	background-color: #00CCFF;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-style: solid;
+	border-color: #333333;
+}
+.tableRow {
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-style: solid;
+	border-color: #333333;
+}
+.tableStyle {
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-style: solid;
+	border-color: #333333;
+}
+.itemTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	color: #0033CC;
+	font-weight: normal;
+	text-decoration: none;
+}
+.itemDescription {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+}

@@ -1,0 +1,446 @@
+html {
+		overflow-y: scroll;
+}
+body {
+		margin: 0px;
+		background-color: #91979F;
+}
+.clearfixplain {
+		clear: both;
+}
+.clearfix:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+}
+/* Pure CSS Responsive Navigation */
+.toggle, [id^=drop] {
+		display: none;
+}
+/* Giving a background-color to the nav container. */
+#nav-container {
+		background: #222F3E;
+		width: 100%;
+		text-align: center;
+}
+nav {
+		display: inline-block;
+		margin: 0 auto;
+		padding: 0;
+		text-align: left;
+		background-color: #222F3E;
+		line-height: 32px;
+		font-family: Arial, Helvetica, "sans-serif", "Gill Sans";
+		word-wrap: break-word;
+		width: auto;
+}
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+nav:after {
+		content: "";
+		display: table;
+		clear: both;
+}
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+		float: left;
+		text-align: left;
+		padding: 0 !important;
+		margin: 0 auto;
+		list-style: none;
+		position: relative;
+}
+/* Positioning the navigation items inline */
+nav ul li {
+		margin: 0px;
+		display: inline-block;
+		float: left;
+		background-color: #222F3E;
+}
+/* Styling the links */
+nav a {
+		display: block;
+		padding: 14px 20px;
+		color: #FFF;
+		font-size: 17px;
+		text-decoration: none;
+		outline: none;
+}
+nav ul li ul li:hover {
+		background: #000;
+}
+/* Background color change on Hover */
+nav a:hover {
+		background-color: #000;
+}
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+		display: none;
+		position: absolute;
+		/* has to be the same number as the "line-height" of "nav a" */
+		top: 60px;
+		padding: 0;
+}
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+		display: inherit;
+}
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+		width: 200px;
+		float: none;
+		display: list-item;
+		position: relative;
+		z-index: 9999;
+}
+/* Second, Third and more Tiers
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+		position: relative;
+		top: -60px;
+		/* has to be the same number as the "width" of "nav ul ul li" */
+		left: 200px;
+}
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after {
+		/* content: ' +'; */
+}
+li > a:only-child:after {
+		content: '';
+}
+@media all and (max-width : 768px) {
+		#logo {
+				display: block;
+				padding: 0;
+				width: 100%;
+				text-align: center;
+				float: none;
+		}
+		nav {
+				margin: 0;
+				width: 100%;
+		}
+		nav ul {
+				padding: 0;
+		}
+		/* Hide the navigation menu by default */
+		/* Also hide the  */
+		.toggle + a, .menu {
+				display: none;
+		}
+		/* Styling the toggle lable */
+		.toggle {
+				display: block;
+				background-color: #222F3E;
+				padding: 14px 20px 8px 20px;
+				color: #FFF;
+				font-size: 17px;
+				text-decoration: none;
+				border: none;
+		}
+		.toggle:hover {
+				background-color: #000;
+		}
+		/* Display Dropdown when clicked on Parent Lable */
+		[id^=drop]:checked + ul {
+				display: block;
+		}
+		/* Change menu item's width to 100% */
+		nav ul li {
+				display: block;
+				width: 100%;
+		}
+		nav ul ul .toggle, nav ul ul a {
+				padding: 0 40px;
+		}
+		nav ul ul ul a {
+				padding: 0 80px;
+		}
+		nav a:hover, nav ul ul ul a {
+				background-color: #000000;
+		}
+		nav ul li ul li .toggle, nav ul ul a, nav ul ul ul a {
+				padding: 14px 20px;
+				color: #FFF;
+				font-size: 17px;
+		}
+		nav ul li ul li .toggle, nav ul ul a {
+				background-color: #212121;
+		}
+		/* Hide Dropdowns by Default */
+		nav ul ul {
+				float: none;
+				position: static;
+				color: #ffffff;
+				/* has to be the same number as the "line-height" of "nav a" */
+		}
+		/* Hide menus on hover */
+		nav ul ul li:hover > ul, nav ul li:hover > ul {
+				display: none;
+		}
+		/* Fisrt Tier Dropdown */
+		nav ul ul li {
+				display: block;
+				width: 100%;
+		}
+		nav ul ul ul li {
+				position: static;
+				/* has to be the same number as the "width" of "nav ul ul li" */
+		}
+}
+@media all and (max-width : 330px) {
+		nav ul li {
+				display: block;
+				width: 94%;
+		}
+}
+/* Centre Forms */
+.KT_mainarea {
+		max-width: 900px;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+}
+.KT_mainarea .KT_tng {
+		display: inline-block;
+		padding: 15px 20px 20px 20px;
+		text-align: left;
+		background: #FFFFFF;
+		border-radius: 10px;
+		margin: 1rem;
+}
+.KT_mainarea .KT_tng h1 {
+		text-align: center;
+		padding: 0 0 10px 0;
+}
+/* Loading Modal Window */
+#overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.6);
+		z-index: 5;
+		width: 100%;
+		height: 100%;
+		display: none;
+}
+#loader-container {
+		position: relative;
+		height: 85px;
+		width: 220px;
+		background-color: #fff;
+		box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.55);
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 99999999;
+		border: 1px solid #333;
+		border-radius: 5px;
+}
+@keyframes fadeIn {
+		from {
+				opacity: 10;
+		}
+}
+#loader-container #loader-text {
+		position: relative;
+		top: 30px;
+		margin-left: 85px;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		font-weight: lighter;
+		font-size: 22px;
+		color: #777;
+		animation: fadeIn 0.6s infinite alternate;
+}
+/* Center login box */
+.login-box-outer {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+}
+.login-box {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 360px;
+		margin: 0 auto;
+		border-radius: 10px;
+		padding: 25px;
+		background: #ddd;
+		box-shadow: 0px 0px 61px 3px rgba(0, 0, 0, 0.75);
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+		text-align: center;
+}
+/* Font styling inside login box area */
+.login-box .KT_field_error, .login-box .form_validation_field_error_container {
+		font-size: 14px;
+}
+.login-box table {
+		margin: auto;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+/* Form elements same width */
+.same-width-form-300 {
+		width: 300px;
+		box-sizing: border-box;
+}
+/*Temp setup styles*/
+.temp h1, .temp h3 {
+		padding: 20px 20px 0 20px;
+		text-align: center;
+		color: #222F3E;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+.temp h3 {
+		padding-top: 0;
+}
+/* Default form element styling */
+input[type=checkbox], input[type=radio] {
+		transform: scale(1.3);
+}
+input[type=text], input[type=email], select, textarea {
+		outline: 0;
+		border: 1px solid #aaa;
+		border-radius: 3px;
+		box-sizing: border-box;
+		height: 26px;
+		width: 100%
+}
+input[type=text]:focus, input[type=email]:focus, select:focus, textarea:focus {
+		outline: 0;
+		border: 1px solid #000FF2;
+		border-radius: 3px;
+		-webkit-box-shadow: 0px 0px 5px 0px rgba(88, 120, 255, 0.50);
+		box-shadow: 0px 0px 5px 0px rgba(88, 120, 255, 0.50);
+		/*margin-right: 45px;*/
+}
+textarea {
+		height: 65px;
+}
+::placeholder {
+		color: rgba(255, 64, 0, 0.6);
+}
+/* Image Preview Containers */
+span[id^='error'] {
+		color: red;
+		font-weight: bold;
+		display: block;
+		margin-top: 0;
+}
+div[id^='preview'] {
+		float: left;
+		position: relative;
+		margin-top: 5px;
+		padding: 12px;
+		background-color: #e8e3e3;
+		border-radius: 12px;
+		border: 1px dashed gray;
+}
+.closeBtn {
+		position: absolute;
+		right: 12px;
+		background-color: red;
+		color: white;
+		border: none;
+		border-radius: 0px;
+		font-size: 14px;
+		font-weight: 600;
+		cursor: pointer;
+		padding-bottom:2px;
+		outline:0;
+}
+/*Tooltips */
+.tool {
+		position: relative;
+		display: inline-block;
+		text-align: center;
+		background: #000;
+		color: #fff;
+		height: 11px;
+		width: 11px;
+		padding: 2px;
+		border-radius: 50%;
+		font-size: 0.9em;
+		margin: 0 0.3em;
+		line-height: 11px;
+		cursor: help;
+}
+/*== common styles for both parts of tool tip ==*/
+.tool::before, .tool::after {
+		left: 70%;
+		opacity: 0;
+		position: absolute;
+		z-index: -100;
+}
+.tool:hover::before, .tool:focus::before, .tool:hover::after, .tool:focus::after {
+		opacity: 1;
+		z-index: 100;
+		animation: fadeIn ease 20s;
+}
+/*== pointer tip ==*/
+.tool::before {
+		border-style: solid;
+		border-width: 0 0.75em 1em 0.75em;
+		border-color: transparent transparent #3E474F transparent;
+		top: 100%;
+		content: "";
+		margin-left: -1em;
+}
+.tool:hover::before, .tool:focus::before {
+		animation: fadeIn ease 1s;
+}
+/*== speech bubble ==*/
+.tool::after {
+		background: #3E474F;
+		border-radius: .25em;
+		top: 170%;
+		color: #EDEFF0;
+		content: attr(data-tip);
+		margin-left: -2.75em;
+		padding: 1em;
+		width: 20em;
+		max-width: 350px;
+		font-size: 1.1em;
+		font-weight: 200;
+		line-height: 1.4em;
+		white-space: normal !important;
+}
+.tool:hover::after, .tool:focus::after {
+		animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+		0% {
+				opacity: 0;
+		}
+		100% {
+				opacity: 1;
+		}
+}
+@media (max-width: 760px) {
+		.tool::after {
+				font-size: .75em;
+				margin-left: -5em;
+				width: 10em;
+		}
+}
+/* PM TODO: TEMP STYLE FOR NOTES - REMOVE AT END */
+.notice-msg {
+		color: white;
+		background-color:#009417
+		width: 90%;;
+		padding: 1rem;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		font-weight: normal;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		border-radius: 10px
+}

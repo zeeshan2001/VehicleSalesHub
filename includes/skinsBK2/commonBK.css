@@ -1,0 +1,114 @@
+html {
+		overflow-y: scroll;
+}
+body {
+		margin: 0px;
+}
+.clearfixplain {
+		clear: both;
+}
+.clearfix:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+}
+input, select, textarea {
+		box-sizing: border-box;
+}
+input[type=checkbox], input[type=radio] {
+		transform: scale(1.5, 1.5);
+}
+textarea {
+		height: 70px;
+		padding: 5px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+}
+input[type=text]:focus, .input[type=email]:focus, textarea:focus {
+/*border: 1px solid #8BB3F4;*/
+border-style: none;
+border: 1px solid #000000 !important;
+outline:0;
+}
+::placeholder {
+		color: rgba(255, 64, 0, 0.6);
+}
+/* remove buton styling */
+button {
+	background: none;
+	border:0 !important;
+	outline:0;
+	padding:0 !important;
+}
+button:hover {
+		cursor: pointer;
+	  color:#3c63a2;
+}
+/*TinyMCE buttons */
+button.tox-button {
+	padding: 3px 6px;
+}
+/* delete links on lists */
+a.KT_delete_link {
+	color:red !important;
+}
+/* filter buttons */
+button.reset_filter, button.filter_records {
+	color:#aaa;
+}
+a.KT_delete_link:hover, button.reset_filter:hover, button.filter_records:hover {
+	color:#3c63a2 !important;
+}
+/* buttons on form pages */
+button[name="KT_Insert1"], button[name="KT_Update1"] {
+color:#555;
+}
+button[name="KT_Delete1"] {
+	color:red;
+} 
+a.KT_Cancel1 {
+	color:orange !important;
+}
+button[name="KT_Insert1"]:hover, button[name="KT_Update1"]:hover, button[name="KT_Delete1"]:hover, a.KT_Cancel1:hover {
+	color:#3c63a2 !important;
+} 
+/* Loading Modal Window */
+#overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.6);
+		z-index: 5;
+		width: 100%;
+		height: 100%;
+		display: none;
+}
+#loader-container {
+		position: relative;
+		height: 85px;
+		width: 220px;
+		background-color: #fff;
+		box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.55);
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 99999999;
+		border: 1px solid #333;
+		border-radius: 5px;
+}
+@keyframes fadeIn {
+  from { opacity: 1; }
+}
+#loader-container #loader-text {
+		position: relative;
+		top: 30px;
+		margin-left: 85px;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		font-weight: lighter;
+		font-size: 22px;
+		color: #555;
+	  animation-delay: 2s;
+		animation: fadeIn 1s infinite alternate;
+}

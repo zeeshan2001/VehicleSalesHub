@@ -1,0 +1,9 @@
+<?php
+$news->Close();
+$jargon->Close();
+$car_manufacturers->Close();
+$car_manufacturers2->Close();
+$van_manufacturers->Close();
+$pages->Close();
+$year_plate->Close();
+?>

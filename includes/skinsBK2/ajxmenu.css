@@ -1,0 +1,36 @@
+@charset "utf-8";
+/*
+ Ajatix Advanced CSS Drop Down Menu
+ Copyright (C) 2009-2016 Ajatix. All rights reserved.
+ http://www.ajatix.com
+*/
+.AJXCSSMenufWIXaMD,.AJXCSSMenufWIXaMD_n,.AJXCSSMenufWIXaMD *,.AJXCSSMenufWIXaMD_n * {box-sizing:border-box;}
+.AJXCSSMenufWIXaMD {position:relative;z-index:100;width:100%;line-height:0;background:#333;text-align:center;}
+.AJXCSSMenufWIXaMD ul {position:relative;display:inline-block;margin:0;padding:0px 0px 0px 0px;list-style-type:none;}
+*+html .AJXCSSMenufWIXaMD ul {display:inline;}
+.AJXCSSMenufWIXaMD li {float:left;margin:0;}
+.AJXCSSMenufWIXaMD li:hover,.AJXCSSMenufWIXaMD li.ajxover {position:relative;}
+.AJXCSSMenufWIXaMD a,.AJXCSSMenufWIXaMD_n a {display:block;overflow:hidden;}
+.AJXCSSMenufWIXaMD>ul>li>a {height:60px;white-space:nowrap;padding:0 24px 0 24px;font:20px "Lucida Sans Unicode", "Lucida Grande", sans-serif;line-height:60px;text-decoration:none;text-transform:none;text-align:left;border:0;color:#ffffff;transition:background-color 0.3s linear;background:none;}
+.AJXCSSMenufWIXaMD>ul>li:hover>a,.AJXCSSMenufWIXaMD>ul>li.ajxover>a {background:#111;}
+.AJXCSSMenufWIXaMD>ul>li>a.ajxsub {padding:0 24px 0 24px;background:none;}
+.AJXCSSMenufWIXaMD>ul>li:hover>a.ajxsub,.AJXCSSMenufWIXaMD>ul>li.ajxover>a.ajxsub {position: static;background:#111;}
+.AJXCSSMenufWIXaMD li ul {position:absolute;left:-9999px;top:-9999px;width:236px;height:auto;display:inline-block;vertical-align:top;font-size:0;float:none;padding:20px 0px 20px 0px;border:none;background:#333;}
+.AJXCSSMenufWIXaMD li:hover > ul,.AJXCSSMenufWIXaMD li.ajxover > ul {left:0px;top:62px;}
+.AJXCSSMenufWIXaMD li li {width:236px;margin:0;}
+.AJXCSSMenufWIXaMD li li a {height:auto;white-space:normal;padding:6px 8px 6px 43px;font:16px "Lucida Sans Unicode", "Lucida Grande", sans-serif;line-height:16px;text-decoration:none;text-transform:none;text-align:left;border:0;color:#ffffff;}
+.AJXCSSMenufWIXaMD li li:hover>a,.AJXCSSMenufWIXaMD li li.ajxover>a {color:#eee;background:url(ajxmenu_files/sub.gif) no-repeat top left;}
+@media screen and (max-width:520px) {
+.AJXCSSMenufWIXaMD:after,.AJXCSSMenufWIXaMD_n:after {content:'narrow';display:none;}
+.AJXCSSMenufWIXaMD_n {position:relative;width:100%;z-index:100;padding-top:60px;background:#333;cursor:pointer;}
+.AJXCSSMenufWIXaMD_n:before {position:absolute;top:0;right:10px;content:"\2261";font:bold 60px Arial,Helvetica,sans-serif;line-height:60px;color:#ffffff;z-index:1;}
+.AJXCSSMenufWIXaMD_n ul {margin:0;list-style-type:none;background:#111;}
+.AJXCSSMenufWIXaMD_n>ul {height:0;overflow:hidden;}
+.AJXCSSMenufWIXaMD_n>ul.ajxover,.AJXCSSMenufWIXaMD_n li ul{height:auto;padding:10px 0px 10px 8px;cursor:default;}
+.AJXCSSMenufWIXaMD_n li {float:none;margin:0;display:none;}
+.AJXCSSMenufWIXaMD_n .ajxover li {display:block;}
+.AJXCSSMenufWIXaMD_n li a {height:auto;white-space:normal;padding:9px 8px 9px 43px;font:16px "Lucida Sans Unicode", "Lucida Grande", sans-serif;line-height:16px;text-decoration:none;text-transform:none;text-align:left;border:0;color:#ffffff;background:url(ajxmenu_files/sub.gif) no-repeat top left;}
+.AJXCSSMenufWIXaMD_n li:hover>a,.AJXCSSMenufWIXaMD_n li.ajxover>a {color:#fff;background:url(ajxmenu_files/sub.gif) no-repeat bottom left;text-decoration:underline;}
+.AJXCSSMenufWIXaMD_n li a.ajxsub {padding:9px 8px 9px 43px;background:url(ajxmenu_files/sub.gif) no-repeat top left;}
+.AJXCSSMenufWIXaMD_n li:hover>a.ajxsub,.AJXCSSMenufWIXaMD_n li.ajxover>a.ajxsub {position: static;background:url(ajxmenu_files/sub.gif) no-repeat bottom left;}
+}

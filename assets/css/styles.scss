@@ -1,0 +1,17 @@
+//Branding & common styles
+$ukcd-red: #A81E22;
+$ukcd-blue: #23265B;
+$tp-green: #04DA8D;
+$ukcd-font: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+//Breakpoints for media queries
+$phone-l: 37.5rem; //600px
+$tablet-p: 43.75rem; //700px
+$tablet-l: 62.5rem; //1000px
+$desktop: 75rem; //1200px
+
+@import "reset";
+@import "forms";
+@import "header";
+@import "nav";
+@import "main";
+@import "footer";

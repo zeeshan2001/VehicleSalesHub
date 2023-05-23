@@ -1,0 +1,662 @@
+ol.breadcrumb { //styles for the breadcrumb menu
+	padding: 0.1rem 0.2rem;
+	list-style: none;
+}
+ol.breadcrumb li {
+	display: inline;
+	font-size: 1rem;
+	margin:0;
+}
+ol.breadcrumb li+li:before {
+	padding: 0.2rem;
+	content: "\003E";
+	color: $ukcd-red;
+}
+ol.breadcrumb li:last-child a {
+	pointer-events: none;
+}
+.container {
+	max-width: 90rem;
+	margin: 50px auto 10px auto;
+	padding: 1rem;
+h1 {
+	background: $ukcd-red;
+	display: inline-block;
+	border-radius: 0.5rem;
+	padding: 0.2rem 0.7rem 0.3rem 0.7rem;
+	margin: 1rem 0;
+	color: #fff;
+	}
+h2, h3 {
+	margin: 0.3rem 0 0.6rem 0;
+	color: $ukcd-red;
+	font-weight: 600;
+	font-size :1.2rem;
+	scroll-margin-top: 100px; // Adjusts anchors to take into account sticky header (new browsers)
+	scroll-snap-margin-top: 100px; // Adjusts anchors to take into account sticky header (older Safari desktop & iOS browsers)
+	}
+h3 {
+		font-weight: 500;
+	}
+p {
+	margin-bottom: 1rem;
+	font-size: 1.1rem;
+		a {
+			color: $ukcd-red;
+			text-decoration: underline;
+		}
+	}
+	li {
+		margin: 0 0 1rem 1.8rem
+	}
+	li:last-child {
+		margin-bottom: 0;
+	}
+}
+#page-header { //homepage specific rules
+	color: #fff !important;
+	background: $ukcd-blue;
+	padding:0.5rem;
+	margin: 0.8rem 0;
+	h1 {
+	background: $ukcd-red;
+	border-radius: 0.25rem;
+	width: -moz-fit-content;
+	width: fit-content;
+	margin: 0.5rem auto !important;
+	padding: 0.3rem 0.6rem;
+	display:block;
+	}
+	h2 {
+	text-align: center;
+	margin: 0.5rem;
+	color: #fff;
+	}
+
+#bandf, #bodyoptions {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+	}
+	#bandf {
+.benefit{
+	flex: 0 0 100%;
+	margin:0.3rem;
+	background: $ukcd-red;
+	border-radius: 0.25rem;
+	padding: 0.3rem 0.6rem;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	text-align: center;
+	a {
+		color:#fff;
+		&:hover {
+		color: #fff !important;
+		}
+	}
+	}
+	}
+		#bodyoptions {
+.bodybutton{
+	flex: 0 0 100%;
+	margin:0.3rem;
+	background: #fff;
+	border-radius: 0.25rem;
+	padding: 0.3rem 0.6rem;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	text-align: center;
+	a {
+		color:$ukcd-blue;
+		&:hover {
+		color: $ukcd-blue !important;
+		}
+	}
+	}
+	}
+#trustpilot-header {
+	display:grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap:0.2rem;
+	align-items: center;
+	margin-bottom: 1rem;
+#trustpilot-slim img {
+	margin: 0 auto;
+	}
+#trustpilot-quotes {
+	text-align:center;
+	font-size:1.1rem;
+		}
+	}
+}
+#sub-header { 
+	margin: 0.8rem 0;
+}
+.box-container, .news-box-container, .search-box-container { //box containers for car, & news results
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: 1fr // responsive CSS Grid layout
+}
+.box {
+	color: #fff;
+	font-size: 1.2rem;
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: 1fr auto auto auto;
+	grid-gap: 0;
+
+}
+.search-box {
+		background: $tp-green;
+		color: $ukcd-blue;
+		border-radius: 0.5rem;
+		padding:0.5rem;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		justify-content: center;
+		align-content: center;
+&:hover img {
+	opacity: 0.2;
+}
+&:hover .search-details {
+	opacity: 1;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	z-index: 2;
+}
+}
+.car-title {
+	border-radius: 0.75rem 0.75rem 0 0;
+span {
+	font-size: 1rem;
+	font-weight: lighter;
+}
+}
+.car-title, .car-price {
+	background-color: $ukcd-blue;
+	padding: 0.75rem;
+}
+.car-image-container, .search-image-container {
+		grid-column-start: 1;
+		grid-row-start: 1;
+		display: grid;
+		justify-content: center;
+		align-content: center;
+}
+.search-image-container {
+span {
+	padding-bottom: 0.5rem;
+	font-weight:bold;
+	text-align:center;
+}
+}.search-img {
+	margin: -30px 0;
+}
+.car-image {
+	padding: 0 2px;
+	box-shadow: 0px 0px 0px 2px #23265B inset;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	justify-content: center;
+	align-content: center;
+a {
+	color: #fff;
+	text-decoration: none;
+}
+img {
+	opacity: 1;
+	transition: .5s ease;
+	margin: 0.2rem auto;
+}
+&:hover img {
+	opacity: 0.3;
+}
+&:hover .more-details {
+	opacity: 1;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	z-index: 2;
+}
+}
+.more-details, .search-details {
+	transition: 1s ease;
+	opacity: 0;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	z-index: 2;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+.more-details-button, .search-details-button {
+	padding: 14px;
+	width: 130px;
+	height: 22px;
+	border-radius: 28px;
+	background-color: $ukcd-red;
+	color: #fff;
+	box-sizing: content-box;
+	text-align: center;
+.fas {
+	font-size: 1.5rem;
+	line-height: 1.3rem;
+}
+span {
+	font-size: 1.3rem;
+	line-height: 1.1rem;
+	vertical-align: top;
+}
+}
+.search-details-button {
+	width:146px;
+	background-color: #23265B;
+	color:#fff;
+	margin-bottom: 1rem;
+}
+.car-saving {
+	background-color: $ukcd-red;
+	padding: 0.75rem;
+	border-radius: 0 0 0.75rem 0.75rem;
+}
+.make-box-container { // Manufacturer Pages
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+	}
+.make-box {
+	font-size: 1rem;
+	}
+.make-title {
+	border-radius: 0.75rem 0.75rem 0 0;
+	background: $ukcd-blue;
+	color:#fff;
+	padding:0.2rem;
+	text-align:center;
+	}
+.make-image-container {
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+.make-image {
+	padding: 0 2px;
+	box-shadow: 0px 0px 0px 2px $ukcd-blue inset;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	justify-content: center;
+	align-content: center;
+	 border-radius: 0 0 0.75rem 0.75rem;
+	}
+.make-image-container img {
+	max-width:128px;
+	height:auto;
+	display: block !important;
+	margin: 0.2rem auto 0.25rem auto;
+	overflow:hidden;
+	}
+.make-image-container img:hover{
+	opacity:0.7
+	}
+.recordnav {
+	width:100%;
+	background: $ukcd-blue;
+	color: #fff;
+	text-align:center;
+	font-size:1.4rem;
+	padding:0.5rem;
+	margin-bottom: 1rem;
+	vertical-align: middle;
+	&:last-of-type {
+		margin-top: 1rem;
+	}
+	a {
+		color: #fff;
+	}
+	.fas {
+		font-size:2rem;
+	}
+	span {
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 0.5rem;
+	}
+}
+
+/*.news-box-container { //box containers for news results - NOTE: moved to line 132
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: 1fr;
+}*/
+.news-box {
+	color: #fff;
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: 5rem auto 1fr;
+	grid-gap: 0;
+}
+.news-title {
+	border-radius: 0.75rem 0.75rem 0 0;
+	background-color: $ukcd-red;
+	padding: 0.75rem;
+	font-size: 1.1rem;
+	padding: auto 0.2rem;
+	display:grid;
+	align-content: center;
+
+a {
+	 color: #fff;
+
+&:hover, &:visited {
+	 color: #fff;
+	}
+ }
+}
+.news-date {
+	font-size: 0.9rem !important;
+	color: $ukcd-red;
+}
+.news-desc {
+	background-color: $ukcd-blue;
+	padding: 0.75rem;
+	font-size:1rem;
+	font-weight: 400;
+	border-radius: 0 0 0.75rem 0.75rem;
+}
+.news-image-container {
+	grid-column-start: 1;
+	grid-row-start: 1;
+	width: 100%;
+	padding-top: 66%; /* Aspect Ratio */
+	position: relative;
+	background: no-repeat center center;
+	background-size: cover;
+}
+.news-image {
+	padding: 0 2px;
+	box-shadow: 0px 0px 0px 2px #23265B inset;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	justify-content: center;
+	align-content: center;
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+img {
+	opacity: 1;
+	transition: .5s ease;
+	margin: 0.2rem auto;
+}
+&:hover .news-image-container{
+	opacity: 0.3;
+}
+&:hover .more-details {
+	opacity: 1;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	z-index: 2;
+}
+}
+.more-details {
+	transition: 1s ease;
+	opacity: 0;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	z-index: 2;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+.more-details-button {
+	padding: 14px;
+	width: 130px;
+	height: 22px;
+	border-radius: 28px;
+	background-color: $ukcd-red;
+	color: #fff;
+	box-sizing: content-box;
+.fas {
+	font-size: 1.5rem;
+	line-height: 1.3rem;
+}
+span {
+	font-size: 1.3rem;
+	line-height: 1.1rem;
+	vertical-align: top;
+}
+}
+	.page-img-right { //styles for the image on generic pages with trustpilot overlay at bottom
+		max-width: 600px;
+		float:right;
+		margin: 1rem;
+		position:relative;
+		overflow:hidden;
+		padding:0;
+		line-height:0;
+		border-radius: 1rem
+	}
+	.page-img-right img {
+		width:100%;
+		height:auto;
+	}
+	.page-img-right .trustpilot-footer {
+		position:absolute;
+		bottom: 0;
+		background:rgba(0,0,0,0.5);
+		width:100%;
+		border-radius: 0 0 1rem 1rem;
+		text-align: center;
+		padding:0.5rem 0
+	}
+.page-img-right .trustpilot-footer img {
+		max-width:90%;
+		height:auto;
+		margin: 0 auto;
+	}
+.news-img-left { //The rules below are for image styles, these styles are embedded in TinyMCE editor too
+	float:left;
+	margin:1rem 1.1rem 1rem 0;
+	width:100%;
+	max-width:400px;
+	height:auto;
+	border-radius:0.65rem;
+}
+.news-img-right {
+	float:right;
+	margin:1rem 0 1rem 1.1rem;
+	width:100%;
+	max-width:400px;
+	height:auto;
+	border-radius:0.65rem;
+}
+.news-img-left-big {
+	float:left;
+	margin:1rem 1.1rem 1rem 0;
+	width:100%;
+	max-width:500px;
+	height:auto;
+	border-radius:0.75rem;
+}
+.news-img-right-big {
+	float:right;
+	margin:1rem 0 1rem 1.1rem;
+	width:100%;
+	max-width:500px;
+	height:auto;
+	border-radius:0.75rem;
+}
+.news-img-left-xbig {
+	float:left;
+	margin:1rem 1.1rem 1rem 0;
+	width:100%;
+	max-width:600px;
+	height:auto;
+	border-radius:0.85rem;
+}
+.news-img-right-xbig {
+	float:right;
+	margin:1rem 0 1rem 1.1rem;
+	width:100%;
+	max-width:600px;
+	height:auto;
+	border-radius:0.85rem;
+}
+.news-img-full {
+	margin:1rem 0;
+	max-width:100%;
+	height:auto;
+	border-radius:1rem;
+}
+#contact-area { //Contact page rules
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: 1rem;
+	margin-top: 1rem;
+}
+#map, #contact-details {
+	min-height: 600px;
+}
+#contact-details {
+input, select, textarea {
+	margin-bottom: 0.5rem;
+}
+input[type=submit] {
+	margin-bottom: 1.4rem;
+	background: $ukcd-red;
+	color: #fff;
+	&:hover {
+	background: $ukcd-blue;
+	cursor: pointer;
+	}
+}
+input[name="enq_company"] { //Hidden honeypot field to catch bots
+		display:none;
+	}
+.pristine-error, .form-msg {
+		background: $ukcd-blue;
+		color:#fff;
+		margin: -0.5rem 0 1rem 0;
+		padding:0.5rem;
+		font-size:1rem;
+	}
+h1 {
+	margin-top:0;
+	}
+h2 {
+	color: $ukcd-blue;
+	font-size: 1.5rem;
+	}
+	img {
+		display:inline;
+	}
+}
+.vehicle-detail {
+	display: grid;
+	grid-coloumn-gap: 0.5rem;
+	grid-template-columns: 100%;
+}
+.veh-summary, .veh-summary-red, .veh-summary-blue {
+	font-size:1.6rem !important;
+	border-radius: 5px;
+}
+.veh-summary-blue, .veh-summary-red {
+	display: inline-block !important;
+	color: #fff !important;
+	padding:0.3rem 0.7rem;
+}
+.veh-summary-blue {
+	background: $ukcd-blue;
+}
+.veh-summary-red {
+	background: $ukcd-red;
+}
+veh-summary-blue a, veh-summary-blue a:hover, veh-summary-blue a:active, veh-summary-red a, veh-summary-red a:hover, veh-summary-red a:active {
+	color: #fff !important;
+}
+#loanCalc .form-group {
+	margin: 0 1rem 0.7rem 0;
+}
+.glider-contain {
+		width: 100%;
+		height:auto;
+		margin-right:0.8em;
+	}
+#tabs-h {
+	margin-top: 1rem;
+}
+#tabs-h li { //Tabs with equipment, tech specs ertcs
+	margin:0;
+}
+@media screen and (min-width: $tablet-p ) { //tablets portrait - min 700px wide
+	#page-header {
+	#bandf .benefit, #bodyoptions .bodybutton {
+	flex: 0 0 49%;
+		}
+	}
+.container {
+	margin: 80px auto 10px auto;
+}
+.box-container, .news-box-container, .search-box-container {
+	grid-template-columns: repeat(2,calc(50% - 0.5rem));
+		}
+}
+@media screen and (min-width: $tablet-l ) { //tablets landscape min 1000px wide
+#page-header {
+#trustpilot-header {
+	display:grid;
+	grid-template-columns: 25rem 30rem;
+	grid-gap:1rem;
+	margin-bottom: 0.2rem;
+	justify-content: center;
+#trustpilot-slim img {
+	margin: 0 0 0 auto;
+	}
+#trustpilot-quotes {
+	text-align:left;
+		}
+	}
+	}
+.box-container, .news-box-container {
+	grid-template-columns: repeat(3,calc(33.3% - 0.66rem));
+	}
+	#contact-area { //Contact page rules
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1rem;
+}
+#map, #contact-details {
+	min-height: 600px;
+}
+.vehicle-detail {
+	grid-template-columns: 50% 50%;
+}
+.glider-contain {
+		margin-right: 0 !important;
+}
+}
+@media screen and (min-width: $desktop ) { //desktops min 1200px wide
+	#page-header {
+	#bandf, #bodyoptions {
+	/*grid-template-columns: repeat(4, 1fr);*/
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+		}
+	#bodyoptions {
+		.bodybutton {
+  flex: 0 0 24%;
+	}
+}
+	#bandf {
+		.benefit {
+  flex: 0 0 24%;
+
+	}
+}
+	}
+	.box-container, .news-box-container, .search-box-container {
+	grid-template-columns: repeat(4,calc(25% - 0.75rem));
+}
+}

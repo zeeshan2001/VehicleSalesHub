@@ -1,0 +1,219 @@
+/* all buttons lists; */
+.button_big, .button_small, .button_smallest, .KT_tngtable tbody tr.KT_buttons input, .KT_tnglist .KT_tngtable #KT_selAll, #KT_tngdeverror input, #KT_tngtrace input, .KT_tngtable th.KT_sorter input, .KT_row_filter_submit_button, .KT_tnglist .KT_tngtable tbody tr input, .KT_tng .KT_tngform .KT_topbuttons input, .KT_topbuttons a, .KT_tng .KT_tngform .KT_bottombuttons input, div.KT_topbuttons > div > input[type=button], div.KT_topbuttons > input[type=button], div.KT_bottombuttons > div > input[type=button], div.KT_bottombuttons > input[type=button] {
+		font-size: 12px;
+		padding: 6px 12px;
+		background-color: #eee;
+		color: #555;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+}
+.button_big:hover, .button_big:focus, .button_small:hover, .button_small:focus, .button_smallest:hover, .button_smallest:focus, .KT_tngtable tbody tr.KT_buttons input:hover, .KT_tngtable tbody tr.KT_buttons input:focus, .KT_tnglist .KT_tngtable #KT_selAll:hover, .KT_tnglist .KT_tngtable #KT_selAll:focus, #KT_tngdeverror input:hover, #KT_tngdeverror input:focus, #KT_tngtrace input:hover, #KT_tngtrace input:focus, .KT_tngtable th.KT_sorter input:hover, .KT_tngtable th.KT_sorter input:focus, .KT_row_filter_submit_button:hover, .KT_tngtable th.KT_sorter input:focus, .KT_tnglist .KT_tngtable tbody tr input:hover, .KT_tnglist .KT_tngtable tbody tr input:focus, .KT_tng .KT_tngform .KT_topbuttons input:hover, .KT_tng .KT_tngform .KT_topbuttons input:focus, .KT_topbuttons a:hover, .KT_topbuttons a:focus, .KT_tng .KT_tngform .KT_bottombuttons input:hover, .KT_tng .KT_tngform .KT_bottombuttons input:focus, div.KT_topbuttons > div > input[type=button]:hover, div.KT_topbuttons > div > input[type=button]:focus, div.KT_topbuttons > input[type=button]:hover, div.KT_topbuttons > input[type=button]:focus, div.KT_bottombuttons > div > input[type=button]:hover, div.KT_bottombuttons > div > input[type=button]:focus, div.KT_bottombuttons > input[type=button]:hover, div.KT_bottombuttons > input[type=button]:focus {
+		background-color: #ddd;
+		outline: 0;
+}
+/*Button press effect */
+.button_big:active, input.button_small:active, .button_smallest:active, .KT_tngtable tbody tr.KT_buttons input:active, .KT_tnglist .KT_tngtable #KT_selAll:active, #KT_tngdeverror input:active, #KT_tngtrace input:active, .KT_tngtable th.KT_sorter input:active, .KT_row_filter_submit_button:active, .KT_tnglist .KT_tngtable tbody tr input:active, .KT_tng .KT_tngform .KT_topbuttons input:active, .KT_topbuttons a:active, .KT_tng .KT_tngform .KT_bottombuttons input:active, div.KT_topbuttons > div > input[type=button]:active, div.KT_topbuttons > input[type=button]:active, div.KT_bottombuttons > div > input[type=button]:active, div.KT_bottombuttons > input[type=button]:active {
+		background-color: #eee;
+		color: #555;
+		border: 1px solid #ccc;
+		transform: translate(1px, 1px);
+		outline: 0;
+}
+/*red delete buttons */
+a.KT_delete_link + input, input[name=KT_Delete1] {
+		color: red !important;
+}
+a.KT_delete_link + input:focus, input[name=KT_Delete1]:focus, a.KT_delete_link + input:active, input[name=KT_Delete1]:active {
+		transform: translate(1px, 1px);
+		outline: 0;
+}
+/* Main form and list containers */
+.KT_tngform, .KT_tnglist {
+		float: left;
+		background-color: #ffffff;
+		border: solid 1px #4F72B4;
+}
+/* the form tag inside a list or form */
+.KT_tng .KT_tngform form, .KT_tng .KT_tnglist form {
+		padding: 0;
+		margin: 0;
+}
+/* List / Form Headers */
+.KT_tng h3 {
+		margin-left: 4px;
+}
+/* Content generated for ListS and Forms */
+.KT_tng .KT_options {
+		margin: 5px 5px 5px 5px;
+}
+/* th header */
+.KT_row_order th {
+		background: #eee !important;
+		border-bottom: 1px solid #000FF2 !important;
+		padding: 6px;
+}
+/* Filter row */
+.KT_row_filter td {
+		background-color: #ddd;
+		padding: 7px 1.8rem 7px 0;
+}
+/* filter text inputs and select menus */
+.KT_row_filter td input[type=text], .KT_row_filter td select {
+		height: 26px;
+		border: 1px solid #000FF2 !important;
+		border-radius: 3px;
+		width: 100%;
+		max-width:100%;
+}
+.KT_row_filter td input[type=text]:focus, .KT_row_filter td input[type=text]:active {
+		outline: 0;
+		border: 1px solid #444 !important;
+		border-radius: 3px;
+}
+/* Filter submit and reset buttons */
+.KT_row_filter td input[type=submit], .KT_row_filter td button {
+		outline: 0;
+		height: 25px;
+		border: 1px solid #000FF2 !important;
+		border-radius: 3px;
+		margin-right: 5px;
+		background-color: rgba(0, 15, 242, 0.30) !important;
+		color: #fff !important;
+}
+.KT_row_filter td input[type=submit]:active, .KT_row_filter td button:active {
+		transform: translate(1px, 1px);
+		outline: 0;
+}
+.KT_row_filter td input[type=submit]:focus, .KT_row_filter td input[type=submit]:hover, .KT_row_filter td button:focus, .KT_row_filter td button:hover {
+		outline: 0;
+		background-color: rgba(0, 15, 242, 0.40) !important;
+}
+/* Content cells */
+.KT_tngtable tbody td {
+		vertical-align: middle;
+}
+/* Div for the show all records secTION */
+.KT_tng .KT_options {}
+.KT_tng .KT_options a {}
+/* Top and bottom containers for edit, delete, add new buttons */
+.KT_topbuttons, .KT_bottombuttons {
+		text-align: right;
+		padding: 8px 12px;
+		min-height: 20px;
+		/*background: #222F3E;*/
+}
+/* Container for edit and delete buttons */
+.KT_topbuttons div.KT_operations, .KT_bottombuttons div.KT_operations {
+		display: inline;
+}
+.KT_topbuttons div.KT_left, .KT_bottombuttons div.KT_left {
+		float: left;
+}
+.KT_topbuttons {
+		border-bottom: solid 1px 333;
+}
+.KT_bottombuttons {
+		border-top: solid 1px #333;
+}
+.KT_bottombuttons a, .KT_topbuttons a {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+}
+/* list specific */
+.KT_tnglist .KT_options {
+		padding-right: 4px;
+		text-align: right;
+		font-size: 12px;
+}
+.KT_tnglist th {
+		background-color: #dadadc;
+		border-bottom: 1px solid black;
+}
+.KT_tnglist .KT_options {
+		margin-bottom: 0px;
+}
+/* th.KT_order: the sorter link (Order) and the save button */
+/* td.KT_order: the move up / down buttons on each row */
+.KT_tnglist th.KT_order, .KT_tnglist td.KT_order {
+		width: 70px ! important;
+		text-align: center;
+}
+/* appearance of the move up/down list buttons here */
+.KT_tnglist td.KT_order .KT_button_move_down {
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-image: url(images/down.gif);
+}
+.KT_tnglist td.KT_order .KT_button_move_up {
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-image: url(images/up.gif);
+		margin-right: 0px;
+}
+.KT_tnglist th.KT_order_selected, .KT_tnglist td.KT_order_selected {
+		border: 1px solid red;
+		padding: 1px;
+}
+.KT_tnglist th.KT_sorter a {
+		padding-right: 15px;
+		margin-right: 15px;
+		text-decoration: none;
+}
+/* th.KT_ascL modifies the active ordering link */
+.KT_tnglist th.KT_asc a {
+		background: url(images/up.gif) no-repeat 100% 50%;
+}
+.KT_tnglist th.KT_desc a {
+		background: url(images/down.gif) no-repeat 100% 50%;
+}
+/* KT_move_op_link: link for saving the moved rows */
+.KT_tnglist th.KT_asc a.KT_move_op_link, .KT_tnglist th.KT_desc a.KT_move_op_link {
+		padding: 0;
+		margin: 0;
+		background-image: none;
+}
+/* row colors */
+/* row alternative color */
+.KT_tnglist table.KT_tngtable tr.KT_even, tr.KT_even {
+		background-color: #eeeeee;
+}
+/* selected row when checbox is checed */
+.KT_tnglist table.KT_tngtable tr.KT_highlight {
+		background-color: #eaeaff;
+}
+/* moved highlight color */
+.KT_tnglist tr.KT_movehighlight {
+		background-color: #b9dfb9;
+}
+/* table row hover */
+	.KT_tnglist table.KT_tngtable tbody tr:hover {
+		background-color: #eaffea;
+}
+.KT_tnglist table.KT_tngtable tbody tr.KT_over {
+		background-color: #eaffea ! important;
+}
+/* KT_bottomnav, KT_topnav, list navigation container */
+.KT_tng .KT_tnglist .KT_bottomnav, .KT_tng .KT_tnglist .KT_topnav {
+		text-align: center;
+		font-size: 12px;
+	  padding:10px
+}
+.KT_tng .KT_tnglist .KT_bottomnav {
+		margin: 0;
+}
+.KT_tng .KT_tnglist .KT_topnav {
+		margin: 0;
+}
+/* for styling the links inside the navigation area, see nav.css */
+.KT_tng h1 {
+		font-size: 18px;
+		padding: 4px 0px 4px 4px;
+		margin: 0px 0px 0px 0px;
+}
+/* Form "Record x" tag when editing multiple records */
+.KT_tng .KT_tngform h2 {
+		font-size: 16px;
+		padding: 4px 0px 4px 4px;
+		margin: 0px 0px 0px 0px;
+}
+.KT_tng .KT_tnglist .KT_masterlink {}

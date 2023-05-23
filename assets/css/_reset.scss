@@ -1,0 +1,48 @@
+	html {
+	font-size: 100%;
+	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+//Padding, margin and font defaults
+body {
+	margin: 0;
+	padding: 0;
+	font: normal 1.2rem 'Segoe UI', Tahoma, Geneva, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-weight:400;
+	color: $ukcd-blue;
+}
+h1, h2 {
+	font-weight: 400;
+}
+h1 {
+	font-size:1.5rem;
+}
+h2 {
+	font-size:1.2rem;
+}
+a, a:visited {
+	color: $ukcd-blue;
+	text-decoration:none;
+}
+a:hover, a:active {
+	color:$ukcd-red !important;
+}
+//Responsive images no bigger than actual width
+img,
+picture {
+	max-width: 100%;
+	height:auto;
+	display: block;
+}
+//Inherit fonts for inputs and buttons and border-box
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	box-sizing: border-box;
+}

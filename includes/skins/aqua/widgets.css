@@ -1,0 +1,123 @@
+/* Charcter Counter and Restrict */
+.chars-length {
+		background-color: #000;
+		color: #fff;
+		display: inline-block;
+		margin: 0 0 0 1px;
+		padding: 5px;
+		text-align: center;
+		min-width: 20px;
+		/* transform: translateY(0);*/
+		vertical-align: top;
+}
+.warn {
+		background-color: firebrick;
+		color: #fff;
+}
+/* Image Preview Containers */
+span[id^='error'] {
+		color: red;
+		font-weight: bold;
+		display: block;
+		margin-top: 0;
+}
+div[id^='preview'] {
+		float: left;
+		position: relative;
+		margin-top: 5px;
+		padding: 6px 6px 3px 6px;
+		background-color: #e8e3e3;
+		border-radius: 5px;
+		border: 1px dashed gray;
+}
+.closeBtn {
+		position: absolute;
+		right: 6px;
+		background-color: red;
+		color: white;
+		border: none;
+		border-radius: 0 !important;
+		font-size: 14px;
+		font-weight: 600;
+		cursor: pointer;
+		padding: 2px 5px 3px 5px !important;
+		outline: 0;
+}
+.closeBtn:hover {
+	color:#fff;
+	background:#AA0002;
+}
+/* Tooltips */
+.tool {
+		position: relative;
+		display: inline-block;
+		text-align: center;
+		background: #000;
+		color: #fff;
+		height: 11px;
+		width: 11px;
+		padding: 2px;
+		border-radius: 50%;
+		font-size: 0.9em;
+		margin: 0 0.3em;
+		line-height: 11px;
+		cursor: help;
+}
+/*== common styles for both parts of tool tip ==*/
+.tool::before, .tool::after {
+		left: 70%;
+		opacity: 0;
+		position: absolute;
+		z-index: -100;
+}
+.tool:hover::before, .tool:focus::before, .tool:hover::after, .tool:focus::after {
+		opacity: 1;
+		z-index: 100;
+		animation: fadeIn ease 20s;
+}
+/*== pointer tip ==*/
+.tool::before {
+		border-style: solid;
+		border-width: 0 0.75em 1em 0.75em;
+		border-color: transparent transparent #3E474F transparent;
+		top: 100%;
+		content: "";
+		margin-left: -1em;
+}
+.tool:hover::before, .tool:focus::before {
+		animation: fadeIn ease 1s;
+}
+/*== speech bubble ==*/
+.tool::after {
+		background: #3E474F;
+		border-radius: .25em;
+		top: 170%;
+		color: #EDEFF0;
+		content: attr(data-tip);
+		margin-left: -2.75em;
+		padding: 1em;
+		width: 20em;
+		max-width: 350px;
+		font-size: 1.1em;
+		font-weight: 200;
+		line-height: 1.4em;
+		white-space: normal !important;
+}
+.tool:hover::after, .tool:focus::after {
+		animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+		0% {
+				opacity: 0;
+		}
+		100% {
+				opacity: 1;
+		}
+}
+@media (max-width: 760px) {
+		.tool::after {
+				font-size: .75em;
+				margin-left: -5em;
+				width: 10em;
+		}
+}

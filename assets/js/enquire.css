@@ -1,0 +1,142 @@
+#enquery_popup-wraper {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999991;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.enquery_popup {
+    width: 60%;
+    height: auto;
+    position: relative;
+    background-color: #fff;
+    top: 25%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 20px 20px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 33%);
+    border-radius: 2px;
+}
+
+.enquery_popup .title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: #A81E22;
+}
+
+.enquery_popup .vehicle {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.enquery_data {
+    padding-top: 15px;
+}
+
+.enquery_data li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border-top: 1px dashed;
+    padding: 5px 0;
+}
+
+.enquery_data li .field_name {
+    font-size: 16px;
+}
+
+.enquery_data li .field_value {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.enquer_left_side {
+    box-shadow: 7px 0 5px -6px rgb(0 0 0 / 20%);
+    padding-right: 10px;
+}
+
+.enquer_right_side {
+    margin: 0 20px;
+}
+
+.enquer_right_side .cross {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    cursor: pointer;
+}
+
+.enquer_right_side h3 {
+    text-align: center;
+}
+
+.enquer_right_side .enquery_form_text {
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.enquer_right_side .two_block_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.enquer_right_side .checkbox label {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 3px;
+}
+
+.enquer_right_side .form_policy {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.enquer_right_side .form_policy a {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.enquer_right_side .submit_enquery {
+    width: 100%;
+    text-align: center;
+    background-color: #A81E22;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 1300px) {
+    .enquer_right_side .two_block_form {
+        grid-template-columns: 1fr;
+    }
+
+    .enquery_popup {
+        top: 5%;
+        width: 90%;
+        grid-template-columns: 1fr;
+        max-height: 550px;
+        overflow: scroll;
+    }
+
+    .enquer_left_side {
+        box-shadow: none;
+    }
+
+    .enquer_right_side {
+        padding-top: 20px;
+        margin: 0;
+    }
+    
+}

@@ -1,0 +1,41 @@
+header {
+	padding: 0.6rem 1.5rem;
+	background-color: #fff;
+	display:grid;
+	grid-row-gap: 0.5rem;
+	text-align: center;
+	font-size: 1.5rem;
+	color: #23265B;
+
+img {
+	height:60px;
+	width:auto;
+	margin:0 auto;
+	}
+#phone-login a {
+	margin-left:1rem;
+		}
+}
+@media only screen and (min-width: 700px) {
+	header {
+	padding: 0.6rem 1.5rem;
+	background-color: #fff;
+	display:grid;
+	grid-column-gap: 1.2rem;
+	grid-template-columns: 1fr max-content max-content;
+	text-align: left !important;
+	vertical-align:middle;
+img {
+	margin:0;
+}
+#phone-login, #social{
+	height:60px;
+	line-height: 60px;
+}
+#social {
+	font-size: 1.6rem;
+	line-height: 62px
+		}
+	}
+}
+

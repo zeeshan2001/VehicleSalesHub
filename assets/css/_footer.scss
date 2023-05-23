@@ -1,0 +1,78 @@
+	footer {
+	margin: 0.8rem 0;
+	font-size: 1.1rem;
+	display:grid;
+	justify-content: center;
+	}
+	#footer-info {
+		display:grid;
+		grid-gap: 1rem;
+		grid-template-columns: repeat(1, 1fr);
+		background-color: $ukcd-blue;
+		color: #fff;
+		margin-bottom:0.6rem;
+		max-width:90rem;
+	a, a:hover {
+			color: #fff !important;
+		}
+	}
+
+	#footer-info>div {
+		padding:1rem;
+	}
+#footer-info>div>div {
+	margin-bottom:0.6rem;
+}
+.footer-info-header {
+	background-color: $ukcd-red;
+	color: #fff;
+	border-radius: 5px;
+	padding: 0.3rem 0.5rem;
+	margin-bottom: 1rem !important;
+}
+#trustpilot-info img {
+	border-radius:5px;
+}
+#copyright, #terms {
+	background:#fff;
+}
+#copyright>div, #terms>div {
+		text-align: center;
+		padding: 0.2rem;
+		font-size: 0.9rem;
+		color: $ukcd-blue;
+	}
+#terms-links {
+	margin-top:0.4rem;
+	span {
+	background-color: $ukcd-blue;
+	color:#fff;
+	padding: 0.3rem 0.8rem;
+	font-size: 0.8rem;
+	border-radius: 3px;
+}
+span a:after {
+		content: " | ";
+		white-space: pre;
+}
+span a:last-child:after {
+		content: "";
+}
+a {
+		color:#fff;
+	}
+a:hover {
+		color:#fff !important;
+	}
+}
+@media screen and (min-width: $tablet-p) { //tablet portrait
+		#footer-info {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	}
+@media screen and (min-width: $tablet-l) { //tablet landscape and desktop
+			#footer-info {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	}
+
